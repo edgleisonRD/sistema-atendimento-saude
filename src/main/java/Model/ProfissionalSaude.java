@@ -2,7 +2,7 @@ package Model;
 
 import java.util.Date;
 
-public abstract class ProfissionalSaude extends Pessoa{
+public abstract class ProfissionalSaude extends Pessoa {
     private int registroProfissional;
     private String especialidade;
 
@@ -27,5 +27,6 @@ public abstract class ProfissionalSaude extends Pessoa{
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
     }
-    public abstract Atendimento atenderPaciente();
+
+    public abstract Atendimento atenderPaciente(Paciente paciente);
 }

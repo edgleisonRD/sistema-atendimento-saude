@@ -4,13 +4,15 @@ public class Atendimento {
     private Paciente paciente;
     private ProfissionalSaude profissional;
     private String tipo;
+    private Date data;
     private String descricao;
     public Atendimento(){}
 
-    public Atendimento(Paciente paciente, ProfissionalSaude profissional, String tipo, String descricao) {
+    public Atendimento(Paciente paciente, ProfissionalSaude profissional, String tipo, Date data, String descricao) {
         this.paciente = paciente;
         this.profissional = profissional;
         this.tipo = tipo;
+        this.data = data;
         this.descricao = descricao;
     }
 
@@ -28,6 +30,10 @@ public class Atendimento {
 
     public void setProfissional(ProfissionalSaude profissional) {
         this.profissional = profissional;
+    }
+
+    public Date getData() {
+        return data;
     }
 
     public String getTipo() {

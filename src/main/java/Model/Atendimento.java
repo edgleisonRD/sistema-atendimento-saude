@@ -12,7 +12,7 @@ public class Atendimento {
         this.paciente = paciente;
         this.profissional = profissional;
         this.tipo = tipo;
-        this.data = data;
+        this.data = new Date();
         this.descricao = descricao;
     }
 
@@ -51,5 +51,6 @@ public class Atendimento {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
 }
 
